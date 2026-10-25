@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HospitalCare | My Portfolio Project</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #17324f;
+            background: #f4f8fc;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px 8%;
+            background: white;
+            border-bottom: 1px solid #e1eaf2;
+        }
+
+        header a {
+            color: #147f88;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        main {
+            width: min(1000px, 88%);
+            margin: 50px auto;
+        }
+
+        .tag {
+            color: #147f88;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 58px);
+            line-height: 1.1;
+            margin: 12px 0;
+        }
+
+        h1 span {
+            color: #147f88;
+        }
+
+        .intro {
+            max-width: 680px;
+            color: #5c6f82;
+            font-size: 18px;
+        }
+
+        .panel {
+            background: white;
+            border: 1px solid #e1eaf2;
+            border-radius: 18px;
+            padding: 28px;
+            margin-top: 28px;
+        }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .screenshots img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            border: 1px solid #e1eaf2;
+        }
+
+        .screenshots p {
+            color: #5c6f82;
+            font-size: 14px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #e5f5f5;
+            color: #116b73;
+            border-radius: 20px;
+            padding: 8px 14px;
+            font-size: 14px;
+        }
+
+        .note {
+            color: #5c6f82;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #5c6f82;
+        }
+
+        @media (max-width: 650px) {
+            main {
+                margin: 30px auto;
+            }
+
+            .screenshots {
+                grid-template-columns: 1fr;
+            }
+
+            .panel {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">HospitalCare · Back to website</a>
+    </header>
+
+    <main>
+        <p class="tag">MY FRONT-END PROJECT</p>
+
+        <h1>Hospital<span>Care</span></h1>
+
+        <p class="intro">
+            A healthcare website redesign concept focused on a
+            clear, welcoming, and responsive user experience.
+        </p>
+
+        <section class="panel">
+            <h2>Project overview</h2>
+            <p>
+                I created this project to 
+                building a healthcare-themed website.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>Website screenshots</h2>
+
+            <div class="screenshots">
+                <div>
+                    <img src="screenshots/homepage.png"
+                         alt="HospitalCare website homepage">
+                    <p>Desktop homepage</p>
+                </div>
+
+                <div>
+                    <img src="screenshots/mobileview.png"
+                         alt="HospitalCare website mobile layout">
+                    <p>Mobile layout</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Features</h2>
+            <ul>
+                <li>Responsive desktop and mobile layout</li>
+                <li>Navigation between website sections</li>
+                <li>Healthcare department and service cards</li>
+                <li>Interactive button hover effects</li>
+                <li>Demo appointment form with a confirmation message</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>Technologies used</h2>
+            <div class="skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Project note</h2>
+            <p class="note">
+                This is an independent, unofficial website redesign
+                concept. It is not affiliated with or endorsed by a
+                hospital. The appointment form is for demonstration
+                only and does not submit or book appointments.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        HospitalCare · Front-end learning project
+    </footer>
+</body>
+</html>
